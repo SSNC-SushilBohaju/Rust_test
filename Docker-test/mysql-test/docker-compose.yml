@@ -1,0 +1,12 @@
+version: "4"
+services:
+  demo-container-mysq-db:
+    image: mysql/mysql-server
+    restart: always
+    environment:
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: testdb
+    ports:
+    - "3306:3306"
